@@ -122,6 +122,7 @@ st.markdown("""
         color: #f0f0f0 !important;
         font-size: 0.9rem !important;
     }
+    [data-testid="stExpander"] details > div, [data-testid="stExpander"] details > div * { color: #e6e6e6 !important; }
     [data-testid="stExpander"] summary { border: 1px solid rgba(255,255,255,0.35) !important; border-radius: 10px !important; }
 
     .source-card {
