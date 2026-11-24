@@ -1,0 +1,82 @@
+[
+ {
+  "check": "B2 escape: markup becomes text",
+  "pass": true,
+  "detail": "&lt;b&gt;hi&lt;/b&gt; &lt;img src=x onerror=&quot;1&quot;&gt; &amp; &quot;q&quot;"
+ },
+ {
+  "check": "B2 link check: https://legaldesk.com/documents/rental-agreement",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: https://www.legaldesk.com/x",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: javascript:alert(1)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: http://legaldesk.com/x",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: https://evil.example/claim",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: https://legaldesk.com.evil.example/x",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: https://legaldesk.com@evil.example/x",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B2 link check: (empty)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "A2 score meaning: distance, lower is closer",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "A2 score meaning flips for similarity (higher is closer)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "B3 input cap constant",
+  "pass": true,
+  "detail": "500 chars"
+ },
+ {
+  "check": "B5 weak signals found (log only)",
+  "pass": true,
+  "detail": "retrieved text contains instruction-like phrasing; answer has URL(s) not in retrieved text: http://evil.example/x"
+ },
+ {
+  "check": "B5 a normal legal sentence raises nothing",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "BEFORE: error text (with the secret-looking string) reaches the chat",
+  "pass": true,
+  "detail": "Error processing query: 401 key sk-TESTSECRET-123 rejected at https://internal.example/v1"
+ },
+ {
+  "check": "AFTER: user sees a generic message, no secret-looking string",
+  "pass": true,
+  "detail": "Something went wrong. Please try again."
+ }
+]
