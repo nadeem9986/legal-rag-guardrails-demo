@@ -1,0 +1,83 @@
+{
+ "scoring": {
+  "embedding_dim": 384,
+  "embedding_L2_norm": 1.0,
+  "faiss_index": "IndexFlatL2",
+  "score_returned": "FAISS distance (lower = closer)",
+  "k": 3
+ },
+ "top1_distances": {
+  "calibration_in": [
+   0.593,
+   0.531,
+   0.58,
+   0.57,
+   0.995,
+   1.072
+  ],
+  "calibration_out": [
+   1.382,
+   1.791,
+   1.306,
+   1.568,
+   1.454,
+   1.816
+  ],
+  "test_in": [
+   0.619,
+   0.578,
+   0.501,
+   0.558,
+   0.264
+  ],
+  "test_out": [
+   1.202,
+   0.952,
+   1.599
+  ]
+ },
+ "by_bar": [
+  {
+   "bar": 0.9,
+   "false_refusals_calibration_in": 2,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 0,
+   "false_passes_test_out": 0
+  },
+  {
+   "bar": 1.0,
+   "false_refusals_calibration_in": 1,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 0,
+   "false_passes_test_out": 1
+  },
+  {
+   "bar": 1.1,
+   "false_refusals_calibration_in": 0,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 0,
+   "false_passes_test_out": 1
+  },
+  {
+   "bar": 1.2,
+   "false_refusals_calibration_in": 0,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 0,
+   "false_passes_test_out": 1
+  },
+  {
+   "bar": 1.3,
+   "false_refusals_calibration_in": 0,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 0,
+   "false_passes_test_out": 2
+  },
+  {
+   "bar": 1.4,
+   "false_refusals_calibration_in": 0,
+   "false_refusals_test_in": 0,
+   "false_passes_calibration_out": 2,
+   "false_passes_test_out": 2
+  }
+ ]
+}
