@@ -117,6 +117,13 @@ st.markdown("""
         width: fit-content !important;
     }
     
+    /* guardrails demo: make the expander labels readable on the dark theme */
+    [data-testid="stExpander"] summary, [data-testid="stExpander"] summary p {
+        color: #f0f0f0 !important;
+        font-size: 0.9rem !important;
+    }
+    [data-testid="stExpander"] summary { border: 1px solid rgba(255,255,255,0.35) !important; border-radius: 10px !important; }
+
     .source-card {
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid var(--border);
