@@ -1,0 +1,9 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.cache/
+models/
+results/*.log
+data/docs.json
